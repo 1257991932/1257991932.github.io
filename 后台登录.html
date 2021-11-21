@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<style> 
+header{width:100%;height:250px;} .nav{width:100%;height:50px;background-color: lightblue;}  .main{width:100%;height:auto;} .nav ul{padding: 0;margin:0;list-style-type: none;} .nav ul li{float:left;line-height:50px;} .nav ul li a{text-align: center;text-decoration: none;display: block;width:120px;color:white;}.main p{text-indent: 20px;text-align: justify;} .footer{width:100%height:50px;background-color: lightblue;} .footer p{line-height: 50px;text-align: center;} 
+</style>
+<link type="image/x-icon" rel="shortcut icon" herf="file:///C:/phpstudy_pro/WWW/favicon.ico"/>
+</head>
+
+
+<script>
+   function check(){
+      var name=document.getElementById("name").value;
+   var pass=document.getElementById("pass").value;
+   if(name=="admin" && pass=="admin"){
+   alert("登录成功");
+   window.document.f.action="13084151558.html";
+   window.document.f.submit();
+$_SESSION['loggedIn'] = true;
+   }else{
+   alert("用户名或密码错误");
+   
+   }
+   
+   }
+</script>
+
+<form name="f" action="">
+<center>账号:<INPUT TYPE="text" NAME="" id="name"><br></center>
+<center>密码:<INPUT TYPE="password" NAME="" id="pass"><br></center>
+<center><INPUT TYPE="button" value="登录" onclick="check()"><INPUT TYPE="reset" value="重置"></center>
+</form> 
