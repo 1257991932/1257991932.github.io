@@ -11,6 +11,12 @@ header{width:100%;height:250px;} .nav{width:100%;height:50px;background-color: l
 
 
 <script>
+function clear() {
+Source=document.body.firstChild.data;
+document.open();
+document.close();
+document.body.innerHTML=Source;
+}
    function check(){
       var kl=document.getElementById("kl").value;
       var name=document.getElementById("name").value;
@@ -27,7 +33,7 @@ $_SESSION['loggedIn'] = true;
    
    }
 </script>
-
+<body>
 <form name="f" action="">
 <h2><center><font color="purple">后台登录</font></center></h2>
 <center>账号:<INPUT TYPE="text" NAME="" id="name"><br></center>
@@ -37,3 +43,5 @@ $_SESSION['loggedIn'] = true;
 <p><center>请扫描下方小程序码获取口令</center></p>
 <center><img src="./1.jpg" alt="图片" width="300" height="300"></center>
 </form> 
+
+</body>
