@@ -18,10 +18,9 @@ document.close();
 document.body.innerHTML=Source;
 }
    function check(){
-      var kl=document.getElementById("kl").value;
       var name=document.getElementById("name").value;
    var pass=document.getElementById("pass").value;
-   if(name=="admin" && pass=="admin" && kl=="dsfh3srh4sr654h5"){
+   if(name=="admin" && pass=="admin"){
    alert("登录成功");
    window.document.f.action="无法访问.html";
    window.document.f.submit();
@@ -38,10 +37,7 @@ $_SESSION['loggedIn'] = true;
 <h2><center><font color="purple">后台登录</font></center></h2>
 <center>账号:<INPUT TYPE="text" NAME="" id="name"><br></center>
 <center>密码:<INPUT TYPE="password" NAME="" id="pass"><br></center>
-<center>口令:<INPUT TYPE="password" NAME="" id="kl"><br></center>
 <center><INPUT TYPE="button" value="登录" onclick="check()"><INPUT TYPE="reset" value="重置"></center>
-<p><center>请扫描下方小程序码获取口令</center></p>
-<center><img src="./1.jpg" alt="图片" width="300" height="300"></center>
 </form> 
 
 </body>
