@@ -1,0 +1,81 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: calc(20px + (80 - 20) * (100vw - 320px) / (1280 - 320));
+}
+
+body {
+  background-image: radial-gradient(100% 67% at 50% 50%, #cc1100, #400000);
+  color: #fff;
+  display: flex;
+  font: 1em/1.5 "Oleo Script", sans-serif;
+  height: 100vh;
+}
+
+.scroll, .scroll__text {
+  width: 100%;
+}
+
+.scroll {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  text-shadow: 0.1em 0.1em 0 #111;
+  height: 1.5em;
+}
+
+.scroll__text {
+  animation: slideUp 20s ease-in-out infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transform: translateY(100%);
+}
+.scroll__text:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.scroll__text:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.scroll__text:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.scroll__text:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.scroll__text:nth-of-type(5) {
+  animation-delay: 8s;
+}
+.scroll__text:nth-of-type(6) {
+  animation-delay: 10s;
+}
+.scroll__text:nth-of-type(7) {
+  animation-delay: 12s;
+}
+.scroll__text:nth-of-type(8) {
+  animation-delay: 14s;
+}
+.scroll__text:nth-of-type(9) {
+  animation-delay: 16s;
+}
+.scroll__text:nth-of-type(10) {
+  animation-delay: 18s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  5%, 10% {
+    transform: translateY(0);
+  }
+  15%, to {
+    transform: translateY(-100%);
+  }
+}
