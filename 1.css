@@ -1,0 +1,45 @@
+/*负责边框*/
+.biankuang{
+    margin: 2;
+    padding: 2;
+    width: 48%;
+    height: 80px;
+    border-color: rgb(177, 177, 177);/*边框颜色*/
+    border-style: solid;/*边框样式,solid:实线；dshed:虚线;dotted:点状线*/
+    border-width: 2px;/*边框宽度*/
+    border-radius: 20px;
+    position: relative;
+    top: 10px;
+    float: left;
+}
+
+.biankuang1{
+    margin: 2;
+    padding: 2;
+    width: 48%;
+    height: 80px;
+    border-color: rgb(177, 177, 177);/*边框颜色*/
+    border-style: solid;/*边框样式,solid:实线；dshed:虚线;dotted:点状线*/
+    border-width: 2px;/*边框宽度*/
+    border-radius: 20px;
+    position: relative;
+    top: 10px;
+    float: right;
+}
+
+.biankuang p{
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 2em;
+}
+.biankuang1 p{
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 2em;
+}
+.buju{
+    width: 97%;
+    height: 190px;
+    background: white;
+    margin-left: 20px;
+}
