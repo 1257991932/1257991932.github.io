@@ -4,9 +4,9 @@
     padding: 2;
     width: 48%;
     height: 80px;
-    border-color: rgb(177, 177, 177);/*边框颜色*/
-    border-style: solid;/*边框样式,solid:实线；dshed:虚线;dotted:点状线*/
-    border-width: 2px;/*边框宽度*/
+    border-color: rgb(177, 177, 177);
+    border-style: solid;
+    border-width: 2px;
     border-radius: 20px;
     position: relative;
     top: 10px;
@@ -18,9 +18,9 @@
     padding: 2;
     width: 48%;
     height: 80px;
-    border-color: rgb(177, 177, 177);/*边框颜色*/
-    border-style: solid;/*边框样式,solid:实线；dshed:虚线;dotted:点状线*/
-    border-width: 2px;/*边框宽度*/
+    border-color: rgb(177, 177, 177);
+    border-style: solid;
+    border-width: 2px;
     border-radius: 20px;
     position: relative;
     top: 10px;
