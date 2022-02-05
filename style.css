@@ -59,3 +59,19 @@ body{
     color: blue;
     text-decoration: none;
 }
+
+@media screen and (prefers-color-scheme: dark) {
+    body{
+        background: #202124;
+        color: #eee;
+    }
+    .buju{
+        background: #202124;
+    }
+    .pp a{
+        color: white;
+    }
+    .pp a:hover{
+        color: rgb(71, 203, 255);
+    }
+}
