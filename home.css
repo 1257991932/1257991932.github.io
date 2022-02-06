@@ -1,0 +1,140 @@
+body {
+  margin-top: 150px;
+}
+
+.loading-animate {
+  position: relative;
+  height: 45px;
+  width: 220px;
+  margin: 0 auto;
+  font-size: 14px;
+  display: none;
+}
+
+.loading-animate .animate-tips {
+  position: absolute;
+  right: 120px;
+  top: 16px;
+  color: rgba(15, 197, 92, .9);
+}
+
+@keyframes animateloadingleft {
+  0% {
+    right: 120px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes animateloadingleft {
+  0% {
+    right: 120px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.loading-animate .animate-tips-start {
+  right: 0;
+  -webkit-animation: animateloadingleft 2.5s linear;
+  animation: animateloadingleft 2.5s linear;
+}
+
+.loading-animate b {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: rgba(15, 197, 92, 1);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.loading-animate .animate-0,
+.loading-animate .animate-1,
+.loading-animate .animate-2,
+.loading-animate .animate-3,
+.loading-animate .animate-4 {
+  -webkit-animation: animateloading 2s linear infinite;
+  animation: animateloading 2s linear infinite;
+  opacity: 0;
+}
+
+.loading-animate .animate-0 {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+
+.loading-animate .animate-1 {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+.loading-animate .animate-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.loading-animate .animate-3 {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.loading-animate .animate-4 {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+@keyframes animateloading {
+  0% {
+    transform: rotate(5deg);
+    top: 30px;
+    left: 0px;
+    opacity: 0.5;
+  }
+  5% {
+    top: 20px;
+    opacity: 1;
+  }
+  40% {
+    top: 10px;
+  }
+  50% {
+    left: 38px;
+  }
+  100% {
+    transform: rotate(140deg);
+    opacity: 0;
+    top: 10px;
+    left: 100px;
+  }
+}
+
+@-webkit-keyframes animateloading {
+  0% {
+    -webkit-transform: rotate(5deg);
+    top: 30px;
+    left: 0px;
+    opacity: 0.5;
+  }
+  5% {
+    top: 20px;
+    opacity: 1;
+  }
+  40% {
+    top: 10px;
+  }
+  50% {
+    left: 38px;
+  }
+  100% {
+    -webkit-transform: rotate(140deg);
+    opacity: 0;
+    top: 10px;
+    left: 100px;
+  }
+}
