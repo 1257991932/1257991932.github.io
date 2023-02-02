@@ -1,0 +1,45 @@
+/*负责边框*/
+.biankuang{
+    margin: 2;
+    padding: 2;
+    width: 48%;
+    height: 80px;
+    border-color: rgb(177, 177, 177);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    position: relative;
+    top: 10px;
+    float: left;
+}
+
+.biankuang1{
+    margin: 2;
+    padding: 2;
+    width: 48%;
+    height: 80px;
+    border-color: rgb(177, 177, 177);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    position: relative;
+    top: 10px;
+    float: right;
+}
+
+.biankuang p{
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 2em;
+}
+.biankuang1 p{
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 2em;
+}
+.buju{
+    width: 97%;
+    height: 190px;
+    background: white;
+    margin-left: 20px;
+}

@@ -1,0 +1,84 @@
+/*float:规定元素如何浮动--left:左浮动(浮动到父元素左边)；right:右浮动*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.bar{
+    width: 100%;
+    height: 50px;
+    background: #A5CAF1;
+}
+.content{
+    width: 1000px;
+    height: 50px;
+    background: #A5CAF1;
+    margin: 0 0;/*上下 左右(auto居中)*/
+}
+.content ul{
+    list-style: none;
+}
+.content ul li{
+    width: 100px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+.content ul p{
+    width: 800px;
+    height: 50px;
+    line-height: 50px;
+    
+}
+
+.content ul p1{
+    width: 800px;
+    height: 50px;
+    line-height: 50px;
+    
+}
+.content ul li a:hover{
+    color: white;
+    font-size: 20px;
+}
+.content ul li a{
+    color: black;
+    text-decoration: none;
+}
+.footer{
+    width:100%;
+    height:50px;
+    background-color: #A5CAF1;} 
+.footer p{line-height: 50px;text-align: center;} 
+
+.clear{
+    clear: both;/*(清除浮动-left;right;both)*/
+}
+.header{width:100%;height:250px;text-indent: 1em;}
+.pp{
+    color: black;
+    text-decoration: none;
+}
+.pp a{
+    color: black;
+    text-decoration: none;
+}
+.pp a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body{
+        background: #202124;
+        color: #eee;
+    }
+    .buju{
+        background: #202124;
+    }
+    .pp a{
+        color: white;
+    }
+    .pp a:hover{
+        color: rgb(71, 203, 255);
+    }
+}

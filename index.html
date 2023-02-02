@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>loading</title>
+  <link rel="stylesheet" href="./home.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+
+<a href="home.html"><font color="white"><span id="begin">8</span>秒后跳转</font></a>
+<script>
+    var t=1;
+    var timer=setInterval(time,1000);
+    var spans=document.getElementById("begin");
+    function time(){
+        t--;
+        spans.innerHTML='<span>'+t+'</span>';
+        if (t==0){
+            clearInterval(timer);
+            return window.location.href='home.html';
+        }console.log(t);
+    }
+</script>
+</body>
+</html>
